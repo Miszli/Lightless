@@ -1,0 +1,65 @@
+@media (width > 1200px) {
+
+	.header {
+
+		&__text {
+			max-width: 500px;
+		}
+
+		.slides {
+			.slide {
+				height: 530px;
+				width: 120px;
+				&__title {
+					font-size: 3.6rem;
+				}
+			}
+
+			.active {
+				width: 360px;
+			}
+		}
+	}
+
+	.recommended-places {
+		.carousel {
+			margin: 130px 0;
+
+			&__button {
+				&--right {
+					margin-left: 280px;
+				}
+	
+				&--left {
+					margin-left: -280px;
+				}
+			}
+			&__item {
+				width: 380px;
+				height: 560px;
+
+				&--smallest-left {
+					margin-right: 560px;
+					transform: rotate3d(0, 1, 0, -35deg);
+				}
+
+				&--smaller-left {
+					margin-right: 380px;
+					transform: rotate3d(0, 1, 0, -35deg);
+				}
+
+				&--smaller-right {
+					margin-left: 380px;
+					transform: rotate3d(0, 1, 0, 35deg);
+				}
+
+				&--smallest-right {
+					margin-left: 560px;
+					transform: rotate3d(0, 1, 0, 35deg);
+				}
+			}
+		}
+	}
+}
+
+

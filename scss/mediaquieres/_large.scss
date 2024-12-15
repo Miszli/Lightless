@@ -1,0 +1,145 @@
+@media (width > 992px) {
+	.purple-bubble {
+		width: 400px;
+		height: 400px;
+	}
+	.pink-bubble {
+		width: 230px;
+		height: 230px;
+	}
+	.header-bubble-first {
+		top: 42%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.header-bubble-second {
+		top: 22%;
+	}
+
+	.header {
+		&__text {
+			max-width: 500px;
+			margin-right: 30px;
+		}
+
+		.slides {
+			.slide {
+				height: 530px;
+				width: 120px;
+
+				&__title {
+					font-size: 3.2rem;
+				}
+			}
+
+			.active {
+				width: 320px;
+
+				.slide__text {
+					font-size: 2.2rem;
+					padding: 30px;
+				}
+			}
+		}
+	}
+
+	.recommended-places {
+		.carousel {
+			margin: 120px 0;
+
+			&__button {
+				&--right {
+					margin-left: 180px;
+				}
+
+				&--left {
+					margin-left: -180px;
+				}
+			}
+			&__item {
+				width: 320px;
+				height: 475px;
+
+				&--smallest-left {
+					margin-right: 360px;
+					transform: rotate3d(0, 1, 0, -35deg);
+				}
+
+				&--smaller-left {
+					margin-right: 260px;
+					transform: rotate3d(0, 1, 0, -35deg);
+				}
+
+				&--smaller-right {
+					margin-left: 260px;
+					transform: rotate3d(0, 1, 0, 35deg);
+				}
+
+				&--smallest-right {
+					margin-left: 360px;
+					transform: rotate3d(0, 1, 0, 35deg);
+				}
+			}
+		}
+	}
+
+	.faq {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 50px;
+
+		&__questions {
+			gap: 40px;
+
+			.question-box {
+				width: 50vw;
+				max-width: 700px;
+			}
+		}
+	}
+
+	.bortle-scale {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: center;
+		gap: 60px;
+
+		.lets-go-desktop {
+			display: block;
+			margin-top: 200px;
+		}
+
+		.section-subtitle {
+			margin-top: 40px;
+		}
+
+		.lets-go-mobile {
+			display: none;
+		}
+
+
+		.imgs-box {
+			display: flex;
+			flex-direction: row;
+			margin: 0;
+			gap: 20px;
+			max-width: 1000px;
+			&__img {
+				width: calc(25% - 10px);
+				height: clamp(377px, 70vw, 740px);
+			}
+		}
+	}
+
+	.footer {
+		&__links {
+			flex-direction: row;
+			align-items: start;
+			justify-content: space-between;
+
+		}
+	}
+}

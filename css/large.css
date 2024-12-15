@@ -1,0 +1,22 @@
+@media (width > 992px) {
+  .header__text--title {
+    font-size: 4.2rem;
+  }
+  .header__text--p {
+    font-size: 2rem;
+  }
+  .header .slides .slide {
+    margin-right: 20px;
+    height: 400px;
+  }
+  .header .slides .slide__title {
+    font-size: 2.8rem;
+  }
+  .header .slides .active {
+    width: 440px;
+  }
+  .header .slides .active .slide__text {
+    font-size: 1.8rem;
+    padding: 20px;
+  }
+}/*# sourceMappingURL=large.css.map */

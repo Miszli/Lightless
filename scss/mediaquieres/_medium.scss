@@ -1,0 +1,150 @@
+@media (width > 768px) {
+
+	.header {
+		padding: 0 30px;
+		.header-content {
+			margin-top: 0;
+			flex-direction: row;
+		}
+
+		.burger-btn {
+			display: none;
+		}
+
+		.nav-desktop {
+			display: block;
+			.nav__links {
+				display: flex;
+				font-size: 2rem;
+
+				li {
+					list-style: none;
+				}
+
+				&--link {
+					position: relative;
+					padding: 0 20px;
+					text-decoration: none;
+					color: var(--white);
+
+					&::before {
+						content: '';
+						position: absolute;
+						width: 0;
+						height: 1px;
+						left: 50%;
+						bottom: -5px;
+						transform: translateX(-50%);
+						background-color: var(--white);
+						transition: width 0.3s;
+					}
+
+					&:hover::before {
+						width: 50%;
+					}
+
+					&:nth-child(4) {
+						cursor: pointer;
+						.fa-solid {
+							margin-left: 10px;
+						}
+						.nav__options--option {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+
+		&__text {
+			max-width: 350px;
+			margin: 0 10px 0 0;
+		}
+
+		.header-content {
+			justify-content: space-between;
+		}
+
+		.slides {
+			.slide {
+				height: 400px;
+				width: 100px;
+
+				&__title {
+					font-size: 2.8rem;
+				}
+			}
+
+			.active {
+				width: 240px;
+
+				.slide__text {
+					font-size: 1.8rem;
+					padding: 20px;
+				}
+			}
+		}
+	}
+
+	.cards {
+		max-width: 1400px;
+
+		&__text {
+			margin-bottom: 8vh;
+		}
+
+		&__box {
+			justify-content: center;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 15px;
+		}
+
+		&__card {
+			.card-title {
+				font-size: 2.4rem;
+			}
+			height: 230px;
+			font-size: 1.8rem;
+		}
+	}
+
+	.recommended-places {
+		.carousel {
+			margin: 30px 0;
+			&__button {
+				&--right {
+					margin-left: 140px;
+				}
+	
+				&--left {
+					margin-left: -140px;
+				}
+			}
+			&__item {
+				width: 230px;
+				height: 350px;
+
+				&--smallest-left {
+					margin-right: 260px;
+					transform: rotate3d(0, 1, 0, -35deg);
+				}
+
+				&--smaller-left {
+					margin-right: 180px;
+					transform: rotate3d(0, 1, 0, -35deg);
+				}
+
+				&--smaller-right {
+					margin-left: 180px;
+					transform: rotate3d(0, 1, 0, 35deg);
+				}
+
+				&--smallest-right {
+					margin-left: 260px;
+					transform: rotate3d(0, 1, 0, 35deg);
+				}
+			}
+		}
+	}
+}

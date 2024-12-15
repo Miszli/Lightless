@@ -1,0 +1,29 @@
+@media (width > 430px) {
+	.header {
+		&__text {
+			max-width: 350px;
+		}
+
+		.slides {
+			width: auto;
+			.slide {
+				gap: 16px;
+				flex: none;
+				width: 85px;
+
+				&__title {
+					font-size: 2.8rem;
+				}
+			}
+
+			.active {
+				width: 230px;
+
+				.slide__text {
+					font-size: 1.8rem;
+					padding: 20px;
+				}
+			}
+		}
+	}
+}
